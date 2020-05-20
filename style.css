@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url("./images/pattern-curve.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+}
+
+.card{
+    background-image: url("./images/pattern-bg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_image{
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.card_pill{
+    position: relative;
+    margin-top: -20px;
+    padding: 8px 12px;
+    background-color: #FAFAFA;
+    border-radius: 26px;
+    box-shadow: 0 3px 50px hsla(240, 38%, 20%, .50);
+    display: flex;
+    align-items: center;
+}
+
+.card_pill a:first-child{
+    margin-right: 25px;
+}
+
+.about{
+    background-image: url("./images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 70px;
+    padding: 0 10%;
+    margin-top: 30px;
+}
+
+ .about_text{
+    padding-top: 30px;
+    font-size: 18px;
+    color: hsl(240, 38%, 20%);
+    text-align: justify; 
+    padding-bottom: 25px ;
+}
+
+.about_name, .about_position{
+    font-size: 16px;
+    text-align: center;
+}
+
+.about_name{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.about_position{
+    color: hsl(240, 18%, 77%);
+
+}
+
+@media(min-width: 1024px){
+
+body{
+    display: grid;
+    grid-template-columns: 5% 1fr 1.5fr 5% ;
+    grid-template-rows: 1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: auto;   
+}
+
+.card{
+    margin: 0;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: center;
+    background-size: 100%;
+    background-position: center;
+  
+}
+
+.card_image{
+    width: 80%;
+}
+
+.card_pill{
+    margin-right: 45%;
+}
+
+.about{
+    margin-top: -30px;
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    width: 150%;
+    background-size: 10%;
+    background-position: 150px 0;
+}
+
+.about_text{
+    font-size: 32px;
+    text-align: start;
+}
+
+.about_info{
+    display: flex;
+    
+}
+.about_info p:first-child{
+    margin-right: 15px;
+}
+
+.about_info p {
+    font-size: 20px;
+}
+
+}
+
+
+
+
+
